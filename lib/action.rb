@@ -19,6 +19,7 @@ module ListMaker
             line=gets
             @file.write(line)
             @file.close
+            puts "*"*45
         end
 
         def edit

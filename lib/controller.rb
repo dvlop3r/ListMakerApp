@@ -20,7 +20,7 @@ module ListMaker
             while true
                 @action.file=File.new('list.txt','a')
                 puts "List of available actions: "+@@actions.join(', ')
-                print "Select your action: "
+                puts "Select your action "+"(type stop to exit)"
                 action=gets.chomp
                 puts '*'*45
                 break if action=='stop'
